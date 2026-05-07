@@ -1,4 +1,4 @@
-# Multi-Scale Implicit Transformer with Re-parameterize  for Arbitrary-Scale Super-Resolution
+# Frequency Integrated Transformer for  Single Image Arbitrary Scale Super Resolution
 Xufei Wang, Fei Ge, Ling Zheng^, Shizhuang Weng^
 
 Methods based on implicit neural representation have demonstrated remarkable capabilities in arbitrary-scale super-resolution (ASSR) tasks, but they neglect the potential value of the frequency domain, leading to suboptimal performance. We proposes a novel network called Frequency-Integrated Transformer (FIT) to incorporate and utilize frequency information to enhance performance.
