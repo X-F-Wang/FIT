@@ -25,7 +25,7 @@ python train.py -config config.yaml -name name
 
 ## Citation
 
-If MSIT helps your research or work, please consider citing the following works:
+If FIT helps your research or work, please consider citing the following works:
 
 ----------
 ```BibTex
