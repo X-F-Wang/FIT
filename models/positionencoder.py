@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 import numpy as np
 from models import register
-
+#
 @register('posenc')
 class PositionEncoder(nn.Module):
     def __init__(
