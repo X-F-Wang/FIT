@@ -4,10 +4,10 @@
 
 **FIT: Incorporating and Utilizing Frequency Information for Arbitrary-Scale Image Super-Resolution**
 
-[!\[Task](https://img.shields.io/badge/Task-Arbitrary--Scale%20SR-blue)](#)
-[!\[Backbone](https://img.shields.io/badge/Backbone-EDSR%20%7C%20RDN-green)](#)
-[!\[Metrics](https://img.shields.io/badge/Metrics-PSNR%20%7C%20SSIM-orange)](#)
-[!\[Code](https://img.shields.io/badge/Code-Coming%20Soon-lightgrey)](#code-release)
+[![Task](https://img.shields.io/badge/Task-Arbitrary--Scale%20SR-blue)](#)
+[![Backbone](https://img.shields.io/badge/Backbone-EDSR%20%7C%20RDN-green)](#)
+[![Metrics](https://img.shields.io/badge/Metrics-PSNR%20%7C%20SSIM-orange)](#)
+[![Code](https://img.shields.io/badge/Code-Coming%20Soon-lightgrey)](#code-release)
 
 </div>
 
@@ -28,7 +28,7 @@ FIT is placed between an image encoder and an implicit decoder. Given a low-reso
 The following table reports representative PSNR/SSIM results on the DIV2K validation set. FIT achieves consistent gains across both in-scale and out-scale magnifications.
 
 |Encoder|Method|x2|x3|x4|x6|x12|x30|
-|-|-:|-:|-:|-:|-:|-:|-:|
+|---|---:|---:|---:|---:|---:|---:|---:|
 |EDSR|HIIF|34.90 / 0.947|31.26 / 0.920|29.28 / 0.864|27.01 / 0.793|23.91 / 0.640|20.56 / 0.479|
 |EDSR|**FIT**|**35.01 / 0.949**|**31.35 / 0.923**|**29.36 / 0.868**|**27.08 / 0.797**|**23.97 / 0.644**|**20.62 / 0.482**|
 |RDN|HIIF|35.24 / 0.953|31.55 / 0.929|29.53 / 0.875|27.17 / 0.802|24.07 / 0.650|20.65 / 0.484|
@@ -37,7 +37,7 @@ The following table reports representative PSNR/SSIM results on the DIV2K valida
 ### Benchmark datasets with RDN encoder
 
 |Dataset|x2|x3|x4|x6|x8|
-|-|-:|-:|-:|-:|-:|
+|---|---:|---:|---:|---:|---:|
 |Set5|**38.42 / 0.962**|**34.87 / 0.941**|**32.73 / 0.896**|**29.54 / 0.820**|27.36 / 0.742|
 |Set14|**34.44 / 0.930**|**30.88 / 0.845**|**29.09 / 0.804**|**26.91 / 0.724**|**25.47 / 0.666**|
 |BSD100|**32.49 / 0.892**|**29.45 / 0.816**|**27.91 / 0.764**|**26.14 / 0.703**|**25.07 / 0.658**|
@@ -48,7 +48,7 @@ The following table reports representative PSNR/SSIM results on the DIV2K valida
 ### Integer-scale super-resolution
 
 <p align="center">
-  <img src="assets/qualitative\\\\\\\_integer.png" width="95%" alt="Qualitative comparison of integer scales">
+  <img src="assets/qualitative_integer.png" width="95%" alt="Qualitative comparison of integer scales">
 </p>
 
 FIT reconstructs clearer local textures and sharper structural boundaries, especially in challenging regions such as flowers, letters, license plates, and building windows.
@@ -56,7 +56,7 @@ FIT reconstructs clearer local textures and sharper structural boundaries, espec
 ### Non-integer-scale super-resolution
 
 <p align="center">
-  <img src="assets/qualitative\\\\\\\_non\\\\\\\_integer.png" width="80%" alt="Qualitative comparison of non-integer scales">
+  <img src="assets/qualitative_non_integer.png" width="80%" alt="Qualitative comparison of non-integer scales">
 </p>
 
 FIT remains stable under non-integer scale factors, such as x1.8, x2.5, x3.3, and x4.2, showing practical scale-adaptive reconstruction ability.
@@ -68,7 +68,7 @@ The paper further analyzes FIT using a multi-faceted diagnostic framework from t
 ### Visual feature maps
 
 <p align="center">
-  <img src="assets/feature\\\\\\\_map.png" width="95%" alt="Visual feature maps">
+  <img src="assets/feature_map.png" width="95%" alt="Visual feature maps">
 </p>
 
 FIM produces clearer feature responses than purely spatial or alternative frequency modules, indicating improved detail characterization.
@@ -76,11 +76,11 @@ FIM produces clearer feature responses than purely spatial or alternative freque
 ### Frequency error maps
 
 <p align="center">
-  <img src="assets/frequency\\\\\\\_error\\\\\\\_map.png" width="95%" alt="Frequency error maps for different frequency incorporation modules">
+  <img src="assets/frequency_error_map.png" width="95%" alt="Frequency error maps for different frequency incorporation modules">
 </p>
 
 <p align="center">
-  <img src="assets/frequency\\\\\\\_error\\\\\\\_iisa.png" width="95%" alt="Frequency error maps for IISA">
+  <img src="assets/frequency_error_iisa.png" width="95%" alt="Frequency error maps for IISA">
 </p>
 
 These visualizations show that real-imaginary mapping and cross-domain subspace interaction help reduce frequency-level reconstruction errors.
@@ -88,7 +88,7 @@ These visualizations show that real-imaginary mapping and cross-domain subspace 
 ### Local attribution maps
 
 <p align="center">
-  <img src="assets/lam\\\\\\\_context.png" width="75%" alt="Local attribution map visualization">
+  <img src="assets/lam_context.png" width="75%" alt="Local attribution map visualization">
 </p>
 
 FCSA expands the effective context region, supporting the claim that frequency-domain correlation helps capture global contextual information.
@@ -108,11 +108,11 @@ This repository is currently prepared as the project page for FIT. Training code
 
 ## TODO
 
-* \[ ] Release training and inference code
-* \[ ] Release pretrained models
-* \[ ] Add dataset preparation scripts
-* \[ ] Add full benchmark logs
-* \[ ] Add model checkpoints and configuration files
+- [ ] Release training and inference code
+- [ ] Release pretrained models
+- [ ] Add dataset preparation scripts
+- [ ] Add full benchmark logs
+- [ ] Add model checkpoints and configuration files
 
 ## Citation
 
